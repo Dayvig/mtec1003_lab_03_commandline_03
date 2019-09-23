@@ -144,7 +144,10 @@ books log web
 Write the command(s) (including going home) that you used to do this below:
 ----------
 
-
+cd ~
+cd mtec1003-lab-03/books/science-fiction
+pwd
+/Users/student/mtec1003-lab-03/books/science-fiction
 
 ==========
 11.  Write the files that are in the science fiction directory below.
@@ -152,7 +155,8 @@ Write the command(s) (including going home) that you used to do this below:
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
 
-
+ls
+pg84.txt	pg86.txt
 
 ==========
 12.  Again, go back to your home directory.  Now... go to the science-fiction directory using an absolute path!  Verify that you're in the right directory using pwd.
@@ -160,11 +164,17 @@ Write the command(s) that you used to do this - as well as its output - below:
 Write the command(s) that you used to do this below:
 ----------
 
+cd /Users/student/mtec1003-lab-03/books/science-fiction
+pwd
+/Users/student/mtec1003-lab-03/books/science-fiction
+
 ==========
 13. Immediately change back to the mtec1003-lab-03 folder with a single command using a *relative* path.
 
 Write the command(s) that you used to do this below:
 ----------
+
+cd ../..
 
 ==========
 14. Find out what the most recently modified directory is in mtec1003 (there are only 3 to choose from)?  How would you find this out?  Hint: perhaps using something to show the modified date... and sort it by time.
@@ -172,8 +182,15 @@ Write the command(s) that you used to do this below:
 Write the command(s) that you used to do this below:
 ----------
 
+ls -lt
+drwxr-xr-x  129 student  staff  4386 Sep 23 14:03 logs
+drwxr-xr-x    4 student  staff   136 Feb 13  2013 books
+drwxr-xr-x    6 student  staff   204 Feb 13  2013 web
+
 ==========
 15. Create a compressed archive of the logs folder - that is... take the contents of logs and create a single archive (.tar), and compress (.gz)
 
 Write the command(s) that you used to do this below:
 ----------
+
+tar -cvf logs.tar logs
